@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  letter-spacing: 0.5rem;
+}
+
+body {
+  font-family: "Major Mono Display",sans-serif;
+  background-image: url('sharon-pittaway-4_hFxTsmaO4-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 145, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ff8800;
+  line-height: 1.4rem;
+}
+
+h1 {
+  padding: 0.5rem 4rem;
+  line-height: 3.2rem;
+  font-size: 2.8rem;
+}
+
+.grd {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #5e5e5e62;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  width: 70vw;
+  height: 80vh;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #1f1e1e81;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #1f1e1e28;
+  box-shadow: 0 10px 20px 10px #0000003f;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+input {
+  max-width: 500px;
+  font-family: "Doto",sans-serif;
+  width: 50%;
+  padding: 2rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #0000007e;
+  backdrop-filter: blur(10px);
+  border: 2px solid #74747467;
+  box-shadow: 0 2px 10px #ffffff3f;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+input:-webkit-autofill{
+  box-shadow: 0 0 0 1000px #ffa600 inset !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  border-radius: 999px;
+}
+
+input:hover ,input:focus {
+  transform: scale(1.02);
+  transition: 0.5s ease;
+}
+
+
+.btn {
+  color : rgb(0, 0, 0);
+  font-family: "Doto", sans-serif;
+  background-color: rgb(255, 145, 2);
+  margin: 2rem 0;
+  border-radius: 999px;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #ffffff3f;
+  border: 2px solid #29292967;
+}
+
+.btn:hover ,.btn:focus {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+}
+
+
+label {
+  padding: 1.5rem;
+}
+
+.op {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+}
+
+.op p{
+  font-family: "Doto",sans-serif;
+}
+
+img {
+  width: 20px;
+}
+
+.btn p {
+  display: inline-block;
+}
+
+@media(max-height: 600px) {
+  html {
+    font-size: 50%;
+  }
+  input {
+    padding: 2rem;
+  }
+}
+
+@media(max-height: 400px){
+  html {
+    font-size: 50%;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .grd {
+    margin: 0 auto;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  } 
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .op p { 
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .btn p{
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .grd {
+    margin: 0 auto;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  } 
+  .btn p{
+    display: none;
+  }
+
+  input {
+    padding: 1rem;
+  }
+
+}
+@media (max-width: 800px) {
+  #form {
+    padding: 2rem 0;
+  }
+}

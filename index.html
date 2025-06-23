@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Returns Calculator</title>
+
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grd"></div>
+    <div class="container">
+      
+      <div class="in">
+        <h1>Calculate Your Portfolio Returns</h1>
+        <div id="form">
+          <label for="#capital">Capital</label>
+          <input id="capital" type="text">
+          <label for="#year">Years</label>
+          <input id="year" type="text">
+          <label for="#int">Interest</label>
+          <input type="text" id="int">
+          
+        </div>
+      </div>
+
+      <div class="op">
+        <div>
+          <h2>Total amount</h2>
+          <p id="amo">₹0.00</p>
+        </div>
+        <div>
+          <h2>Interest</h2>
+          <p id="intamo">₹0.00</p>
+        </div>
+        <button onclick="calculate()" class="btn"><p>Calculate </p><img src="dot-arrow (1).png"></button>
+      </div>
+    </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
