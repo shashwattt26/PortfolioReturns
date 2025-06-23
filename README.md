@@ -3,7 +3,13 @@
 A sleek, modern, and responsive **web-based compound interest calculator** that helps users compute total returns and interest earned on their portfolio investments.
 
 ![screenshot](calculator.png)
-                           																![screenshot](calculator2.png)
+
+
+
+
+
+
+![screenshot](calculator2.png)
 
 ---
 
